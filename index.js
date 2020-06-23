@@ -1,8 +1,11 @@
 import express from 'express';
-import http from 'http';
 import jwt from 'express-jwt';
 import jwks from 'jwks-rsa';
 import cors from 'cors'
+import dotenv from 'dotenv'
+if (process.env.NODE_ENV !== 'production') {
+    dotenv.config();
+}
 
 import config from './config.js';
 import { getAccessToken } from './twilio.js';
