@@ -1,4 +1,4 @@
-import twilio from 'twilio'
+const twilio = require('twilio')
 
 const getAccessToken = (identity) => {
     const token = new twilio.jwt.AccessToken(
@@ -14,5 +14,5 @@ const getAccessToken = (identity) => {
     return token.toJwt();
 }
 
-export { getAccessToken }
+module.exports = getAccessToken
 

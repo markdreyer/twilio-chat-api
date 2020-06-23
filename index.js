@@ -1,14 +1,14 @@
-import express from 'express';
-import jwt from 'express-jwt';
-import jwks from 'jwks-rsa';
-import cors from 'cors'
-import dotenv from 'dotenv'
+const express = require('express')
+const jwt = require('express-jwt')
+const jwks = require('jwks-rsa')
+const cors = require('cors')
+const dotenv = require('dotenv')
 if (process.env.NODE_ENV !== 'production') {
     dotenv.config();
 }
 
-import config from './config.js';
-import { getAccessToken } from './twilio.js';
+const config = require('./config.js')
+const getAccessToken = require('./twilio.js')
 
 const app = express();
 app.use(cors())

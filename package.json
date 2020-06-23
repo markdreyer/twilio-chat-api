@@ -2,10 +2,9 @@
   "name": "twilio-chat-api",
   "version": "1.0.0",
   "description": "API to authenticate twilio-chat-client",
-  "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node --experimental-modules index.js",
+    "start": "node ./index.js",
     "test": ""
   },
   "keywords": [

@@ -3,4 +3,4 @@ const config = {
     audience: 'xGABs4mZPhkwczTFdS2fjOi8QJXGsaVR' // Client ID of Twilio Chat App SPA
 }
 
-export default config
+module.exports = config
