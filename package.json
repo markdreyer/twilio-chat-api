@@ -1,0 +1,15 @@
+{
+  "name": "twilio-chat-api",
+  "version": "1.0.0",
+  "description": "API to authenticate twilio-chat-client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "twilio",
+    "chat"
+  ],
+  "author": "Mark Dreyer",
+  "license": "ISC"
+}
