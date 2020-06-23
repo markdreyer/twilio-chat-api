@@ -2,9 +2,11 @@
   "name": "twilio-chat-api",
   "version": "1.0.0",
   "description": "API to authenticate twilio-chat-client",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": ""
   },
   "keywords": [
     "twilio",
@@ -13,8 +15,11 @@
   "author": "Mark Dreyer",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "express-jwt": "^5.3.3",
     "express-jwt-authz": "^2.4.0",
-    "jwks-rsa": "^1.8.1"
+    "jwks-rsa": "^1.8.1",
+    "twilio": "^3.46.0"
   }
 }
