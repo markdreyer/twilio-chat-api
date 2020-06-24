@@ -29,8 +29,11 @@ const authorize = jwt({
 
 // This route needs authentication
 app.get('/api/private', authorize, function (req, res) {
+
+    if (!req.user.email_verified) return res.sendStatus(401);
+
     res.json({
-        token: getAccessToken('mark')
+        token: getAccessToken(req.user.email)
     });
 });
 
