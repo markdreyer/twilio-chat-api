@@ -16,7 +16,7 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "express-jwt": "^5.3.3",
+    "express-jwt": "^6.0.0",
     "express-jwt-authz": "^2.4.0",
     "jwks-rsa": "^1.8.1",
     "twilio": "^3.46.0"
